@@ -15,7 +15,7 @@ const InfoCard = ({ imageUrl, title, description, link, linkText, onAiHelpClick,
                     {linkText} <i className="fas fa-arrow-right ml-1"></i>
                 </a>
                 <button 
-                    onClick={() => onAiHelpClick(title, description)}
+                    onClick={() => onAiHelpClick(title, description, 'seed')}
                     className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 text-sm font-semibold"
                 >
                     ✨ Get AI Advice
