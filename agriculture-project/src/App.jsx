@@ -17,6 +17,7 @@ export default function App() {
     const [seeds, setSeeds] = useState([]);
     const [loading, setLoading] = useState(true);
     const [modalState, setModalState] = useState({ title: null, content: '', isLoading: false });
+    //console.log("Current Key:", import.meta.env.VITE_GEMINI_API_KEY);
 
     const getAiHelp = async (title, description, type) => {
         let prompt;
@@ -35,7 +36,7 @@ export default function App() {
         // ---------------------------------------------------------
         // 🟢 PASTE YOUR ROW 1 KEY HERE
         // ---------------------------------------------------------
-        const apiKey = import.meta.env.REACT_APP_GEMINI_API_KEY; 
+        const apiKey = ""; 
 
         try {
             if (!apiKey || apiKey === "YOUR_API_KEY_HERE") {
